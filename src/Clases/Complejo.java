@@ -1,12 +1,8 @@
-/***************************************************************************
-##                        Complejo.java
-##                    -------------------
-##          begin:        Friday', September 1', 2017
-##          author:    ('C) 2017 Phosphorus Moscu/Fernando Pastorelli 
-##          $Id:          Complejo.java, v 1.0 2017/9/1 01:09:40
-##
-##
-***************************************************************************/
+/**
+ * @author: Phosphorus Moscu / Fernando Pastorelli
+ * @version: v1.0 1/09/2017
+ * @see <a href = "https://github.com/Phosphorus-M/Java"> Clases de Java </a>
+*/
 package Clases;
 public class Complejo {
 	//Atributos de objetos
