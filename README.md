@@ -3,6 +3,7 @@ Material de realizado durante las clases de Programación Orientada a Objetos I 
 
 ## Docentes:
 Ing. [Leonardo Blautzik](https://github.com/leoblautzik)
+
 Prof. Mag. Ing. [Pablo Pandolfo](ppandolfo@uno.edu.ar)
 
 ## [Codigos realizados](https://github.com/Phosphorus-M/Java/tree/master/src/Clases):
