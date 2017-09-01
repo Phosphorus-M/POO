@@ -7,4 +7,5 @@ Ing. [Leonardo Blautzik](https://github.com/leoblautzik)
 Prof. Mag. Ing. [Pablo Pandolfo](ppandolfo@uno.edu.ar)
 
 ## [Codigos realizados](https://github.com/Phosphorus-M/Java/tree/master/src/Clases):
- - [Numero Complejo](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Complejo.java)
+- [Hola Mundo](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/HolaMundo.java)
+- [Numero Complejo](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Complejo.java)
