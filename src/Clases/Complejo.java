@@ -1,5 +1,13 @@
+/***************************************************************************
+##                        Complejo.java
+##                    -------------------
+##          begin:        Friday', September 1', 2017
+##          author:    ('C) 2017 Phosphorus Moscu/Fernando Pastorelli 
+##          $Id:          Complejo.java, v 1.0 2017/9/1 01:09:40
+##
+##
+***************************************************************************/
 package Clases;
-
 public class Complejo {
 	//Atributos de objetos
 	private double real;  
