@@ -6,6 +6,9 @@ Ing. [Leonardo Blautzik](https://github.com/leoblautzik)
 
 Prof. Mag. Ing. [Pablo Pandolfo](ppandolfo@uno.edu.ar)
 
+## Alumnos contribuyentes al repositorio:
+[Fernando Pastorelli / Phosphorus Moscu](https://github.com/Phosphorus-M)
+
 ## [Codigos realizados](https://github.com/Phosphorus-M/Java/tree/master/src/Clases):
 - ## [Hola Mundo](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/HolaMundo.java)
 Clasico mensaje de "Hola Mundo"
