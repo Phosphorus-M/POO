@@ -4,7 +4,7 @@ Material de realizado durante las clases de Programación Orientada a Objetos I 
 ## Docentes:
 Ing. [Leonardo Blautzik](https://github.com/leoblautzik)
 
-Prof. Mag. Ing. [Pablo Pandolfo](ppandolfo@uno.edu.ar)
+Prof. Mag. Ing. [Pablo Pandolfo](mailto:ppandolfo@uno.edu.ar)
 
 ## Alumnos contribuyentes al repositorio:
 [Fernando Pastorelli / Phosphorus Moscu](https://github.com/Phosphorus-M)
