@@ -1,16 +1,16 @@
 /**
  * @author: Phosphorus Moscu / Fernando Pastorelli
- * @version: v1.0 7/09/2017
+ * @version: v1.1 7/09/2017
  * @see <a href = "https://github.com/Phosphorus-M/Java"> Clases de Java </a>
  */
 
 package Clases;
 
-public class fecha {
+public class fecha{
 	private int dia;
 	private int mes;
 	private int año;
-
+	private int diamax;
 	public fecha(){
 		this.dia = 1;
 		this.mes=1;
@@ -25,9 +25,9 @@ public class fecha {
 			System.out.println("Fecha invalida");
 		}
 	}
-	
+
 	public Boolean validador(int dia, int mes,  int año) {
-		int diamax;
+		int diamax = 0;
 		switch(mes) {
 		case 1:{
 			diamax = 31;
@@ -83,11 +83,43 @@ public class fecha {
 		}
 		if((((2016-año)%4) == 0) && mes == 2) {
 			if(dia>0 && dia<=29){
+				this.diamax = 29;
 				return true;
 			}
 		}else {
 			if(dia>0&&dia<=diamax && mes>0 && mes<=12){
+				this.diamax = diamax;
 				return true;
+			}
+		}
+		return false;
+	}
+
+	public boolean esAnterior(fecha f) {
+		if(this.año==f.año&&this.mes==f.mes&&this.dia==f.mes) return false;
+		if(this.año<=f.año&&this.mes<=f.mes&&this.dia<f.dia) return false;
+		if(this.año==f.año && this.mes <= f.mes) {
+			if((this.dia == this.diamax) && f.dia == 1) {
+				return true;
+			}else {
+				if(this.dia - f.dia == 1) {
+					return true;
+				}else {
+					return false;
+				}
+			}
+		}
+		else {
+			if(this.año<f.año && this.mes > f.mes) {
+				if((this.dia == this.diamax) && f.dia == 1) {
+					return true;
+				}else {
+					if(this.dia - f.dia == 1) {
+						return true;
+					}else {
+						return false;
+					}
+				}
 			}
 		}
 		return false;
@@ -98,10 +130,21 @@ public class fecha {
 	}
 
 	public static void main(String[] args) {
-		fecha hoy = new fecha(7,9,2017);
-		fecha otro = new fecha(-40,-9,2017);
-		System.out.println(hoy.Mostrafecha());
-		System.out.println(otro.Mostrafecha());
+		fecha verdadero1 = new fecha(7,9,2017);
+		fecha verdadero2 = new fecha(6,9,2017);
+		fecha verdadero3 = new fecha(30,9,2017);
+		fecha verdadero4 = new fecha(1,10,2017);
+		fecha verdadero5 = new fecha(31,12,2017);
+		fecha verdadero6 = new fecha(1,1,2018);
+		fecha falso1 = new fecha(4,10,2017);
+		fecha falso2 = new fecha(8,2,2017);
+		fecha falso3 = new fecha(5,1,2018);
+		System.out.println(verdadero1.esAnterior(verdadero2));
+		System.out.println(verdadero3.esAnterior(verdadero4));
+		System.out.println(verdadero5.esAnterior(verdadero6));
+		System.out.println(falso1.esAnterior(verdadero2));
+		System.out.println(verdadero3.esAnterior(falso2));
+		System.out.println(verdadero5.esAnterior(falso3));
 	}
 
 }
