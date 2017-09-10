@@ -1,6 +1,6 @@
 /**
  * @author: Phosphorus Moscu / Fernando Pastorelli
- * @version: v1.1 7/09/2017
+ * @version: v1.2 10/09/2017
  * @see <a href = "https://github.com/Phosphorus-M/Java"> Clases de Java </a>
  */
 
@@ -9,27 +9,27 @@ package Clases;
 public class fecha{
 	private Integer dia;
 	private Integer mes;
-	private Integer año;
+	private Integer aÃ±o;
 	private Integer diamax;
 	public fecha(){
 		this.dia = null;
 		this.mes = null;
-		this.año = null;
+		this.aÃ±o = null;
 	}
-	public fecha(int dia, int mes, int año){
-		if(validador(dia, mes, año)) {
-			this.año = año;
+	public fecha(int dia, int mes, int aÃ±o){
+		if(validador(dia, mes, aÃ±o)) {
+			this.aÃ±o = aÃ±o;
 			this.dia = dia;
 			this.mes = mes;
 		}else {
 			System.out.println("Fecha invalida");
 			this.dia = null;
 			this.mes = null;
-			this.año = null;
+			this.aÃ±o = null;
 		}
 	}
 
-	public Boolean validador(int dia, int mes,  int año) {
+	public Boolean validador(int dia, int mes,  int aÃ±o) {
 		int diamax = 0;
 		switch(mes) {
 		case 1:{
@@ -84,7 +84,7 @@ public class fecha{
 			diamax = 0;
 		}
 		}
-		if((((2016-año)%4) == 0) && mes == 2) {
+		if((((2016-aÃ±o)%4) == 0) && mes == 2) {
 			if(dia>0 && dia<=29){
 				this.diamax = 29;
 				return true;
@@ -99,9 +99,9 @@ public class fecha{
 	}
 
 	public boolean esAnterior(fecha f) {
-		if(this.año==f.año&&this.mes==f.mes&&this.dia==f.mes) return false;
-		if(this.año<=f.año&&this.mes<=f.mes&&this.dia<f.dia) return false;
-		if(this.año==f.año && this.mes <= f.mes) {
+		if(this.aÃ±o==f.aÃ±o&&this.mes==f.mes&&this.dia==f.mes) return false;
+		if(this.aÃ±o<=f.aÃ±o&&this.mes<=f.mes&&this.dia<f.dia) return false;
+		if(this.aÃ±o==f.aÃ±o && this.mes <= f.mes) {
 			if((this.dia == this.diamax) && f.dia == 1) {
 				return true;
 			}else {
@@ -113,7 +113,7 @@ public class fecha{
 			}
 		}
 		else {
-			if(this.año<f.año && this.mes > f.mes) {
+			if(this.aÃ±o<f.aÃ±o && this.mes > f.mes) {
 				if((this.dia == this.diamax) && f.dia == 1) {
 					return true;
 				}else {
@@ -129,7 +129,7 @@ public class fecha{
 	}
 
 	public String Mostrafecha() {
-		return "("+ this.MostrarDia() +"/"+ this.MostrarMes() + "/" + this.MostrarAño() +")";
+		return "("+ this.MostrarDia() +"/"+ this.MostrarMes() + "/" + this.MostrarAÃ±o() +")";
 	}
 	public Integer MostrarDia() {
 		return this.dia;
@@ -137,8 +137,8 @@ public class fecha{
 	public Integer MostrarMes() {
 		return this.mes;
 	}
-	public Integer MostrarAño() {
-		return this.año;
+	public Integer MostrarAÃ±o() {
+		return this.aÃ±o;
 	}
 	public static void main(String[] args) {
 		fecha verdadero1 = new fecha(7,9,2017);
