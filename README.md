@@ -8,6 +8,7 @@ Prof. Mag. Ing. [Pablo Pandolfo](mailto:ppandolfo@uno.edu.ar)
 
 ## Alumnos contribuyentes al repositorio:
 [Fernando Pastorelli / Phosphorus Moscu](https://github.com/Phosphorus-M)
+
 Fabian Zacarola
 
 ## [Codigos realizados](https://github.com/Phosphorus-M/Java/tree/master/src/Clases):
