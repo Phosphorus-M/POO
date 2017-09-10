@@ -31,3 +31,7 @@ Pertenecientes a la actividad del material de clase [2](https://docs.google.com/
 Define una clase punto que tendrá dos atributos, de tipo real, x e y, que representarán las coordenadas del punto dentro del plano. Define un método que tenga como argumento otro objeto de la clase punto y que calcule la distancia entre los dos puntos. Para probar esta funcionalidad, escribi un método main en el que se creen dos puntos, el primero de los cuales deberá tener las coordenadas 100.0, 200.0 y el segundo deberá tener las coordenadas 400.0, 800.0 y calcule e imprima la distancia entre ambos.
 - ## [Fecha](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/fecha.java)
  Verifica si una fecha es valida o no.
+ Se utilizara el objeto fecha, preguntara día, mes y año. Si las fechas no son validas los atributos seran null.
+- ## [Examen](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Examen.java)
+ Agrega una lista de examenes que se mostraran por pantalla, tiene dependencia de la class [Fecha](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/fecha.java), ya que para [Examen.java](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Examen.java) se utilizara el objeto fecha como tipo de dato para un atributo, preguntara día, mes y año, y obligara al usuario ingresar un valor valido.
+ El sistema de notas varia del 0 al 10.
