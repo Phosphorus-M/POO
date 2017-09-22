@@ -19,11 +19,11 @@ Primer vistazo al paradigma de objetos.
 - ## [FizzBuzz](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/FizzBuzz.java)
 Pertenecientes a la actividad del material de clase [2](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx1bm9wcm9nY29ub2JqZXRvczF8Z3g6Njk0MmE2ZDZjZjQwYTk3Mg) y [3](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx1bm9wcm9nY29ub2JqZXRvczF8Z3g6NTA3ZjFlMDlhNWVhNWIxYQ).
   Imprime por pantalla los números del 1 al 100 pero considerando lo siguiente:
-  
+
     Si el número es divisible por 3 se debe imprimir “Fizz”.
     Si el número es divisible por 5 se debe imprimir “Buzz”.
     Si el número es divisible por 3 y por 5 se debe imprimir “FizzBuzz”.
-    
+
 - ## [Sumados](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Sumados.java)
 Pertenecientes a la actividad del material de clase [2](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx1bm9wcm9nY29ub2JqZXRvczF8Z3g6Njk0MmE2ZDZjZjQwYTk3Mg) y [3](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx1bm9wcm9nY29ub2JqZXRvczF8Z3g6NTA3ZjFlMDlhNWVhNWIxYQ)
   Suma los 1000 primeros números naturales (1+2+3+4+...+1000), imprimiendo por cada suma el resultado parcial obtenido.
@@ -43,3 +43,17 @@ Define una clase punto que tendrá dos atributos, de tipo real, x e y, que repre
  Lee de un [Archivo de texto](https://github.com/Phosphorus-M/Java/blob/master/Archivos/Para%20leer/Lista.txt) y muestra por pantalla todo lo que contiene.
 - ## [Escribir](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Escribir.java)
  Escribe en un [Archivo de texto](https://github.com/Phosphorus-M/Java/blob/master/Archivos/Generados/Texto%20impreso%20-%20Escribir.java.txt) "Hola, buenos dias" y "Hoy llueve.".
+- ## [Vehiculos](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Sumados.java)
+ Pertenecientes a la actividad 1 del material de clase [5](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx1bm9wcm9nY29ub2JqZXRvczF8Z3g6NDRiOWQ2ZjRiZTMyNGJkYg).
+
+  Existen dos tipos de vehículos: las motocicletas, que llevan un chofer y un acompañante, y los autobuses, que llevan un chofer y varios pasajeros. Los vehículos deben conocer la cantidad de kilómetros recorridos, asignar y cambiar chofer. Cada vehículo particular deberá poder agregar un acompañante o diversos pasajeros, respectivamente. En caso del Autobús, no puede cambiar de chofer si hubiera pasajeros. En el caso de la Motocicleta, no puede hacerlo si hubiera un acompañante.
+
+  Esta actividad tiene dependencia de las class [Vehiculo](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Vehiculo.java), [Persona.java](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Persona.java), [Autobus](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Autobus.java), [Motocicleta.java](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Motocicleta.java).
+
+  Persona crea el objeto persona y le establece un nombre y lo devuelve con un metodo.
+
+  Vehiculo establece el kilometraje y el chofer. Puede devolver el nombre del chofer y el kilometraje con metodos. También puede cambiar el chofer.
+
+  Autobus establece el atributo pasajeros, la cantidad maxima de pasajeros por autobus, la cantidad actual de pasajeros y tiene herencia de [Vehiculo](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Vehiculo.java), estos atributos se modifican con metodos en el mismo Autobus y como herencia de [Vehiculo](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Vehiculo.java).
+
+  Motocicleta crea el atributo acompañante y tiene herencia de [Vehiculo](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Vehiculo.java), tiene metodos para modificar este atributo en el mismo archivo y como herencia de [Vehiculo](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Vehiculo.java).
