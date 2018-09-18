@@ -8,18 +8,18 @@ public class Biblioteca {
 	ArrayList<Libro> libros;
 	ArrayList<Revista> revistas;
 	ArrayList<Autor> autores;
-	
+
 	public Biblioteca(String rutaDeLosAutores, String rutaDeEntrada, String rutaDeSalida) {
 		iniciarLista();
 		cargarAutores(rutaDeLosAutores);
 		cargarLibros(rutaDeEntrada);
 		crearSalida(rutaDeSalida);
 	}
-	
+
 	private String devolverGenerico(Publicacion a) {
 		return a.getTitulo() + " " + this.autores.get(a.getAutor()-1).retornarNombreCompleto() + " " + a.retornarPrestado();
 	}
-	
+
 
 	private void crearSalida(String rutaDeSalida) {
 		PrintWriter pw = null;
@@ -54,7 +54,7 @@ public class Biblioteca {
 		this.revistas = new ArrayList<Revista>();
 		this.autores = new ArrayList<Autor>();
 	}
-	
+
 	private void agregarLibro(Libro libro) {
 		this.libros.add(libro);
 	}
@@ -111,6 +111,8 @@ public class Biblioteca {
 	}
 
 	public static void main(String[] args) {
-		Biblioteca a = new Biblioteca("autores.in", "biblioteca.in", "biblioteca.out");
+		Biblioteca a = new Biblioteca(".//src//objetos2017//PC//POO1//Parcial Nº2//autores.in",
+		 															".//src//objetos2017//PC//POO1//Parcial Nº2//biblioteca.in",
+																	".//src//objetos2017//PC//POO1//Parcial Nº2//biblioteca.out");
 	}
 }

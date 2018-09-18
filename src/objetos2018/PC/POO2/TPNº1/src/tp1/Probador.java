@@ -81,7 +81,7 @@ public class Probador {
 		try{
 			for (int i = 0; i < 8; i++) {
 				this.getEntradas()[i] = "";
-				sc = new Scanner(new File(".//Entradas//entrada" + (i+1) + ".in"));
+				sc = new Scanner(new File(".//src//objetos2017//PC//POO2//Entradas//entrada" + (i+1) + ".in"));
 				while (sc.hasNextLine()) {
 					this.getEntradas()[i] += sc.nextLine();
 					if (sc.hasNextLine()) this.getEntradas()[i] += br;
@@ -90,7 +90,7 @@ public class Probador {
 
 				this.getSalidasEsperadas()[i] = "";
 
-				sc = new Scanner(new File(".//Salidas//salida" + (i+1) + ".out"));
+				sc = new Scanner(new File(".//src//objetos2017//PC//POO2//Salidas//salida" + (i+1) + ".out"));
 				while (sc.hasNextLine()) {
 					this.getSalidasEsperadas()[i] += sc.nextLine();
 					if (sc.hasNextLine()) this.getSalidasEsperadas()[i] += br;
@@ -119,7 +119,7 @@ public class Probador {
 	private void generarEntrada(int numeroEntrada){
 		try{
 			System.out.println("Generando entrada " + numeroEntrada);
-			BufferedWriter fw = new BufferedWriter(new FileWriter("entrada.in"));
+			BufferedWriter fw = new BufferedWriter(new FileWriter(".//src//objetos2017//PC//POO2//entrada.in"));
 			fw.write(this.getEntradas()[numeroEntrada]);
 			fw.close();
 			System.out.println("Entrada generada" + numeroEntrada);
@@ -132,7 +132,7 @@ public class Probador {
 	private void ejecutarExe(String pathExe){
 		try{
 			System.out.println("Ejecutando " + pathExe);
-			Process p = Runtime.getRuntime().exec(pathExe);
+			Process p = Runtime.getRuntime().exec(".//src//objetos2017//PC//POO2//" + pathExe);
 			p.waitFor();
 		}
 		catch(Exception e)
@@ -146,7 +146,7 @@ public class Probador {
 		try{
 			System.out.println("Leyendo salida ");
 			String salida = "";
-			Scanner sc = new Scanner(new File("salida.out"));
+			Scanner sc = new Scanner(new File(".//src//objetos2017//PC//POO2//salida.out"));
 			while (sc.hasNextLine()) {
 				salida += sc.nextLine();
 				if (sc.hasNextLine()) salida += br;
@@ -169,7 +169,7 @@ public class Probador {
 			System.out.println("Generando resultado ");
 
 
-			Path path = Paths.get(".//Templates//template.html");
+			Path path = Paths.get(".//src//objetos2017//PC//POO2//Templates//template.html");
 			List<String> lista = Files.readAllLines(path, StandardCharsets.UTF_8);
 			int indice = lista.indexOf(new String("          <!-- Generacion -->"));
 			lista.add(indice++, htr);
@@ -188,7 +188,7 @@ public class Probador {
 				lista.add(indice++, htrC);
 			}
 
-			Path salidas = Paths.get(".//Analisis/Resultados de " + letra +".html");
+			Path salidas = Paths.get(".//src//objetos2017//PC//POO2//Analisis/Resultados de " + letra +".html");
 			Files.write(salidas, lista, StandardCharsets.UTF_8);
 
 			System.out.println("Resultado generado");

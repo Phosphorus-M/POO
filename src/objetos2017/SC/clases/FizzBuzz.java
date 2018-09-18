@@ -1,8 +1,8 @@
 /**
- * Imprimir por pantalla los números del 1 al 100 pero considerando lo siguiente:
- * Si el número es divisible por 3 se debe imprimir “Fizz”.
- * Si el número es divisible por 5 se debe imprimir “Buzz”.
- * Si el número es divisible por 3 y por 5 se debe imprimir “FizzBuzz”.
+ * Imprimir por pantalla los numeros del 1 al 100 pero considerando lo siguiente:
+ * Si el numero es divisible por 3 se debe imprimir "Fizz".
+ * Si el numero es divisible por 5 se debe imprimir "Buzz".
+ * Si el numero es divisible por 3 y por 5 se debe imprimir "FizzBuzz".
  * @author: Phosphorus Moscu / Fernando Pastorelli
  * @version: v1.0 1/09/2017
  * @see <a href = "https://github.com/Phosphorus-M/Java"> Clases de Java </a>

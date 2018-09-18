@@ -4,9 +4,9 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Natural implements Comparable<Natural>{
-	
+
 	private Integer valor;
-	
+
 	public Integer getValor() {
 		return valor;
 	}
@@ -18,7 +18,7 @@ public class Natural implements Comparable<Natural>{
 	public Natural(Integer valor) {
 		this.setValor(valor);
 	}
-	
+
 	public static LinkedList<Natural> getNaturales(String nombreDelArchivo) {
 		Scanner sc = null;
 		LinkedList<Natural> naturales = new LinkedList<>();
@@ -35,12 +35,12 @@ public class Natural implements Comparable<Natural>{
 		}
 		return naturales;
 	}
-	
+
 	public static void listarOrdenadoXjuan(LinkedList<Natural> naturales) {
 		Collections.sort(naturales);
 		for(Natural natural:naturales) System.out.println(natural.getValor());
 	}
-	
+
 	public Boolean esPar() {
 		return this.getValor() % 2 == 0;
 	}
@@ -50,8 +50,8 @@ public class Natural implements Comparable<Natural>{
 		if (!this.esPar() && natu2.esPar())	return 1;
 		return this.getValor().compareTo(natu2.getValor());
 	}
-	
+
 	public static void main(String[] args) {
-		Natural.listarOrdenadoXjuan(Natural.getNaturales("naturales.in"));
+		Natural.listarOrdenadoXjuan(Natural.getNaturales(".//src//objetos2017//Final//2017 Diciembre Segundo llamado//naturales.in"));
 	}
 }

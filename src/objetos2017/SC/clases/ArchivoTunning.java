@@ -11,7 +11,7 @@ import java.io.File;
 public class ArchivoTunning {
 	public static void main(String[] args) {
 		try {
-			Scanner s = new Scanner(new File("./Archivos/Para leer/Lista.txt"));
+			Scanner s = new Scanner(new File(".//src//objetos2017//SC//clases//Archivos//Para leer//Lista.txt"));
 			while (s.hasNextLine()) {
 				System.out.println(s.nextLine());
 			}

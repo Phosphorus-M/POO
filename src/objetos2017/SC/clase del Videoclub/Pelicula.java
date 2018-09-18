@@ -5,28 +5,28 @@ public class Pelicula implements Entregable {
 	private Boolean gived;
 	private String genere;
 	private String director;
-	
-	
+
+
 	public Pelicula() {
 		this.setTitle("");
 		this.setYear(0000);
 		this.gived = Boolean.FALSE;
 		this.setGenere("");
-		this.setDirector("No definido");	
+		this.setDirector("No definido");
 	}
 	public Pelicula(String title, Integer year, String genere, String director) {
 		this.setTitle(title);
 		this.setYear(year);
 		this.gived = Boolean.FALSE;
 		this.setGenere(genere);
-		this.setDirector(director);	
+		this.setDirector(director);
 	}
 	public Pelicula(String title, String director) {
 		this.setTitle(title);
 		this.setYear(0000);
 		this.gived = Boolean.FALSE;
 		this.setGenere("");
-		this.setDirector(director);	
+		this.setDirector(director);
 	}
 
 	public String getTitle() {
@@ -45,9 +45,9 @@ public class Pelicula implements Entregable {
 		Pelicula other = (Pelicula) a;
 		return this.getYear().compareTo(other.getYear());
 	}
-	
+
 	public String toString() {
-		return "( Titulo: " + this.getTitle() + "\nAño: " + this.getYear() + "\nEntregado: " + this.conseguirEntregable() + "\nGenero: " + this.getGenere() + "\nDirector: " + this.getDirector() + ")"; 
+		return "( Titulo: " + this.getTitle() + "\nAno: " + this.getYear() + "\nEntregado: " + this.conseguirEntregable() + "\nGenero: " + this.getGenere() + "\nDirector: " + this.getDirector() + ")";
 	}
 	public String conseguirEntregable(){
 		if(this.isEntregado()) return "Entregado.";
@@ -86,6 +86,6 @@ public class Pelicula implements Entregable {
 	public void setDirector(String director) {
 		this.director = director;
 	}
-	
-	
+
+
 }

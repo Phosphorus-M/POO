@@ -6,6 +6,11 @@ Ing. [Leonardo Blautzik](https://github.com/leoblautzik)
 
 Prof. Mag. Ing. [Pablo Pandolfo](mailto:ppandolfo@uno.edu.ar)
 
+Esp. [Gustavo Dejean](https://www.linkedin.com/in/dejean2010/)
+
+Ayudante de cátedra [Lucas Carnero](lcarnero@uno.edu.ar)
+
+
 ## Alumnos contribuyentes al repositorio:
 [Fernando Pastorelli / Phosphorus Moscu](https://github.com/Phosphorus-M)
 

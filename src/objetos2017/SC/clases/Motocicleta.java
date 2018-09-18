@@ -6,30 +6,30 @@
 package objetos2017.SC.clases;
 
 public class Motocicleta extends Vehiculo{
-	private Persona acompañante;
-		
+	private Persona acompanante;
+
 	public Motocicleta(){
 		super();
 	}
-	
-	private String getAcompañante() {
-		return acompañante.getNombre();
+
+	private String getAcompanante() {
+		return acompanante.getNombre();
 	}
 	public Boolean cambiarChofer(Persona Chofer) {
-		if(this.hayAcompañante()) return Boolean.FALSE;
+		if(this.hayAcompanante()) return Boolean.FALSE;
 		super.cambiarChofer(Chofer);
 		return Boolean.TRUE;
 	}
-	public Boolean hayAcompañante() {
-		return this.getAcompañante()!=null;
+	public Boolean hayAcompanante() {
+		return this.getAcompanante()!=null;
 	}
 	public static void main(String[] args) {
 		Motocicleta Yamaha = new Motocicleta();
 		Yamaha.setChofer(new Persona("Calenton"));
-		Yamaha.acompañante = new Persona("Amigo del Calenton");
+		Yamaha.acompanante = new Persona("Amigo del Calenton");
 		Yamaha.setCantidadDeKilometros(3.5);
-		System.out.println("Chofer: " + Yamaha.getChofer() +" Acompañante: " + Yamaha.getAcompañante() + " Kilometros recorridos: "+ Yamaha.getCantidadDeKilometros());
+		System.out.println("Chofer: " + Yamaha.getChofer() +" AcompaÃ±ante: " + Yamaha.getAcompanante() + " Kilometros recorridos: "+ Yamaha.getCantidadDeKilometros());
 		Yamaha.cambiarChofer(new Persona("Miguel"));
-		System.out.println("Chofer: " + Yamaha.getChofer() +" Acompañante: " + Yamaha.getAcompañante() + " Kilometros recorridos: "+ Yamaha.getCantidadDeKilometros());
+		System.out.println("Chofer: " + Yamaha.getChofer() +" AcompaÃ±ante: " + Yamaha.getAcompanante() + " Kilometros recorridos: "+ Yamaha.getCantidadDeKilometros());
 	}
 }

@@ -6,7 +6,7 @@ public class Videojuego implements Entregable{
 	private Boolean gived;
 
 	public Videojuego() {
-		
+
 		this.setTitle("");
 		this.setCompany("");
 		this.setGenere("");
@@ -18,15 +18,15 @@ public class Videojuego implements Entregable{
 		this.setTitle(titulo);
 		this.setHours(horasEstimadas);
 	}
-	
-	public Videojuego(String titulo, String compañia, String genero, Integer horasEstimadas) {
-		
+
+	public Videojuego(String titulo, String compania, String genero, Integer horasEstimadas) {
+
 		this.setTitle(titulo);
-		this.setCompany(compañia);
+		this.setCompany(compania);
 		this.setGenere(genero);
-		this.setHours(horasEstimadas);	
+		this.setHours(horasEstimadas);
 	}
-	
+
 	public String getTitle() {
 		return title;
 	}
@@ -88,7 +88,7 @@ public class Videojuego implements Entregable{
 		return "No entregado.";
 	}
 	public String toString() {
-		return "( Titulo: " + this.getTitle() + "\nHoras estimadas: " + this.getHours() + "\nEntregado: " + this.conseguirEntregable() + "\nGenero: " + this.getGenere() + "\nCompañia: " + this.getCompany() + ")"; 
+		return "( Titulo: " + this.getTitle() + "\nHoras estimadas: " + this.getHours() + "\nEntregado: " + this.conseguirEntregable() + "\nGenero: " + this.getGenere() + "\nCompania: " + this.getCompany() + ")";
 	}
 
 }

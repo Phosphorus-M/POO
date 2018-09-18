@@ -9,27 +9,27 @@ package objetos2017.SC.clases;
 public class Fecha{
 	private Integer dia;
 	private Integer mes;
-	private Integer año;
+	private Integer ano;
 	private Integer diamax;
 	public Fecha(){
 		this.dia = null;
 		this.mes = null;
-		this.año = null;
+		this.ano = null;
 	}
-	public Fecha(int dia, int mes, int año){
-		if(validador(dia, mes, año)) {
-			this.año = año;
+	public Fecha(int dia, int mes, int ano){
+		if(validador(dia, mes, ano)) {
+			this.ano = ano;
 			this.dia = dia;
 			this.mes = mes;
 		}else {
 			System.out.println("Fecha invalida");
 			this.dia = null;
 			this.mes = null;
-			this.año = null;
+			this.ano = null;
 		}
 	}
 
-	public Boolean validador(int dia, int mes,  int año) {
+	public Boolean validador(int dia, int mes,  int ano) {
 		int diamax = 0;
 		switch(mes) {
 		case 1:{
@@ -84,7 +84,7 @@ public class Fecha{
 			diamax = 0;
 		}
 		}
-		if((((2016-año)%4) == 0) && mes == 2) {
+		if((((2016-ano)%4) == 0) && mes == 2) {
 			if(dia>0 && dia<=29){
 				this.diamax = 29;
 				return true;
@@ -99,9 +99,9 @@ public class Fecha{
 	}
 
 	public boolean esAnterior(Fecha f) {
-		if(this.año==f.año&&this.mes==f.mes&&this.dia==f.mes) return false;
-		if(this.año<=f.año&&this.mes<=f.mes&&this.dia<f.dia) return false;
-		if(this.año==f.año && this.mes <= f.mes) {
+		if(this.ano==f.ano&&this.mes==f.mes&&this.dia==f.mes) return false;
+		if(this.ano<=f.ano&&this.mes<=f.mes&&this.dia<f.dia) return false;
+		if(this.ano==f.ano && this.mes <= f.mes) {
 			if((this.dia == this.diamax) && f.dia == 1) {
 				return true;
 			}else {
@@ -113,7 +113,7 @@ public class Fecha{
 			}
 		}
 		else {
-			if(this.año<f.año && this.mes > f.mes) {
+			if(this.ano<f.ano && this.mes > f.mes) {
 				if((this.dia == this.diamax) && f.dia == 1) {
 					return true;
 				}else {
@@ -129,7 +129,7 @@ public class Fecha{
 	}
 
 	public String Mostrafecha() {
-		return "("+ this.MostrarDia() +"/"+ this.MostrarMes() + "/" + this.MostrarAño() +")";
+		return "("+ this.MostrarDia() +"/"+ this.MostrarMes() + "/" + this.MostrarAno() +")";
 	}
 	public Integer MostrarDia() {
 		return this.dia;
@@ -137,8 +137,8 @@ public class Fecha{
 	public Integer MostrarMes() {
 		return this.mes;
 	}
-	public Integer MostrarAño() {
-		return this.año;
+	public Integer MostrarAno() {
+		return this.ano;
 	}
 	public static void main(String[] args) {
 		Fecha verdadero1 = new Fecha(7,9,2017);

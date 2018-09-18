@@ -11,7 +11,7 @@ public class Escribir {
 	public static void main(String[] args) {
 		PrintWriter p;
 		try {
-			p = new PrintWriter (new FileWriter("./Archivos/Generados/Texto impreso - Escribir.java.txt", true));
+			p = new PrintWriter (new FileWriter(".//src//objetos2017//SC//clases//Archivos//Generados//Texto impreso - Escribir.java.txt", true));
 			/* Notas de la linea anterior:
 			 1 - Sirve para ubicar el archivo en el cual se va a imprimir la setencia.
 			 2 - Con "True" al final de la setencia no sobreescribe sino que se agrega, si se pone False remplazara el archivo si es que existe.
