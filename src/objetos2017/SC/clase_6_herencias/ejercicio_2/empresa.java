@@ -10,7 +10,7 @@ public class empresa {
 	private Integer cantidadDeEmpleados;
 	private empleados[] empleados;
 	private Integer cantidadActualDeEmpleados;
-	
+
 	public empresa(String nombre, Integer cantidadDeEmpleados) {
 		this.setNombreDeEmpresa(nombre);
 		this.setCantidadDeEmpleados(cantidadDeEmpleados);
@@ -41,8 +41,8 @@ public class empresa {
 	public void setNombreDeEmpresa(String nombreDeEmpresa) {
 		this.nombreDeEmpresa = nombreDeEmpresa;
 	}
-	
-	
+
+
 	public String getNombreDelEmpleado(empleados Empleado) {
 		Integer flag = 0;
 		String Cadena = "";
@@ -59,7 +59,7 @@ public class empresa {
 							+ "Planta: " + empleado.getStringDePlanta() + "\n"
 							+ "Cargo: " + empleado.getStringDeCargo() + "\n"
 							+ "Horas trabajadas: " + empleado.getHoras() + "\n"
-							+ "Antiguedad: " + empleado.getAntiguedad() + " Año \n"
+							+ "Antiguedad: " + empleado.getAntiguedad() + " AÃ±o \n"
 							+ "Hijos: " + empleado.getHijos() + "\n"
 							+ "Estado Civil: " + empleado.getStringDeMatrimonio() + "\n";
 				}
@@ -84,7 +84,7 @@ public class empresa {
 							+ "Planta: " + empleado.getStringDePlanta() + "\n"
 							+ "Cargo: " + empleado.getStringDeCargo() + "\n"
 							+ "Horas trabajadas: " + empleado.getHoras() + "\n"
-							+ "Antiguedad: " + empleado.getAntiguedad() + " Año \n"
+							+ "Antiguedad: " + empleado.getAntiguedad() + " AÃ±o \n"
 							+ "Hijos: " + empleado.getHijos() + "\n"
 							+ "Estado Civil: " + empleado.getStringDeMatrimonio() + "\n";
 				}
@@ -93,7 +93,7 @@ public class empresa {
 		if(flag==1)	return Cadena;
 		return "No hubo coincidencia con el nombre del Empleado.";
 	}
-	
+
 	public Boolean setEmpleados(empleados Empleado) {
 		if(!this.hayCapacidad()) return Boolean.FALSE;
 		this.empleados[this.getCantidadActualDeEmpleados()] = new empleados(Empleado);
@@ -108,7 +108,7 @@ public class empresa {
 		this.setCantidadActualDeEmpleados(this.getCantidadActualDeEmpleados()+1);
 		return Boolean.TRUE;
 	}
-	
+
 	public Boolean setEmpleados(String nombre, Boolean cargo, Boolean planta, Integer horas, Integer antiguedad, Integer hijos, Boolean matrimonio) {
 		if(!this.hayCapacidad()) return Boolean.FALSE;
 		this.empleados[this.getCantidadActualDeEmpleados()] = new empleados(nombre, cargo, planta, horas, antiguedad, hijos, matrimonio);
@@ -123,12 +123,12 @@ public class empresa {
 		if(this.getCantidadActualDeEmpleados()<this.getCantidadDeEmpleados()) return Boolean.TRUE;
 		return Boolean.FALSE;
 	}
-	
+
 	public Integer calculoDeSueldo() {
 		Integer Casado=0;
 		if(this.empleados[this.getCantidadActualDeEmpleados()].getMatrimonio()) Casado = 100;
 		if(this.empleados[this.getCantidadActualDeEmpleados()].getCargo()) return (this.empleados[this.getCantidadActualDeEmpleados()].getHoras() * 400)+(this.empleados[this.getCantidadActualDeEmpleados()].getAntiguedad()*150) + (200 * this.empleados[this.getCantidadActualDeEmpleados()].getHijos())+Casado;
-		if(this.empleados[this.getCantidadActualDeEmpleados()].getPlanta()) return (this.empleados[this.getCantidadActualDeEmpleados()].getHoras() * 300)+(this.empleados[this.getCantidadActualDeEmpleados()].getAntiguedad()*100) + (200 * this.empleados[this.getCantidadActualDeEmpleados()].getHijos())+Casado; 
+		if(this.empleados[this.getCantidadActualDeEmpleados()].getPlanta()) return (this.empleados[this.getCantidadActualDeEmpleados()].getHoras() * 300)+(this.empleados[this.getCantidadActualDeEmpleados()].getAntiguedad()*100) + (200 * this.empleados[this.getCantidadActualDeEmpleados()].getHijos())+Casado;
 		return (this.empleados[this.getCantidadActualDeEmpleados()].getHoras() * 200) + (200 * this.empleados[this.getCantidadActualDeEmpleados()].getHijos())+Casado;
 	}
 	public Integer montoTotal() {
@@ -141,5 +141,5 @@ public class empresa {
 		}
 		return sueldos;
 	}
-	
+
 }
