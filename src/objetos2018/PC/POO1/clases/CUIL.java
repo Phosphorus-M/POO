@@ -1,4 +1,4 @@
-package objetos2018.PC.clases;
+package objetos2018.PC.POO1.clases;
 /**
  * @author: Phopshorus Moscu
  * @version: v1.0 7/04/2018
@@ -9,11 +9,11 @@ import java.util.ArrayList;
 
 public class CUIL {
 	private Integer dni;
-	private Integer tipo;
+	private Integer tipo;//Genero
 	private Integer xy;
 	private Integer z;
 	private String cuil;
-	
+
 	public CUIL(Integer dni, char tipo) {
 		this.setDNI(dni);
 		this.setTipo(tipo);
@@ -53,7 +53,7 @@ public class CUIL {
 		this.setZ(11-resto);
 		this.cuil = this.getXy() + " - " + this.getDNI() + " - " + this.getZ();
 	}
-	
+
 	public String getCuil() {
 		return cuil;
 	}
@@ -98,7 +98,7 @@ public class CUIL {
 		}
 		this.setXy(this.getTipo());
 	}
-	
+
 	public Integer getDNI() {
 		return this.dni;
 	}
@@ -114,13 +114,13 @@ public class CUIL {
 	public static void main(String[] args) {
 		CUIL mio = new CUIL(40993996, 'H');
 		mio.verificacion();
-		
+
 		System.out.println(mio.getXy() + " - " + mio.getDNI() + " - " + mio.getZ());
 
-		CUIL katy = new CUIL(38537123, 'm');
+		CUIL katy = new CUIL(38537123, 'm'); //Rip DNI de Katy
 		katy.verificacion();
 		System.out.println(katy.getCuil());
-		
+
 	}
-	
+
 }

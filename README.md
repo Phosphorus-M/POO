@@ -2,19 +2,24 @@
 Material de realizado durante las clases de Programación Orientada a Objetos I de la [Universidad Nacional del Oeste](http://uno.edu.ar/), Buenos Aires, Argentina
 
 ## Docentes:
-Ing. [Leonardo Blautzik](https://github.com/leoblautzik)
+POO1:
+  Ing. [Leonardo Blautzik](https://github.com/leoblautzik)
 
-Prof. Mag. Ing. [Pablo Pandolfo](mailto:ppandolfo@uno.edu.ar)
+  Prof. Mag. Ing. [Pablo Pandolfo](mailto:ppandolfo@uno.edu.ar)
 
-Esp. [Gustavo Dejean](https://www.linkedin.com/in/dejean2010/)
+  Esp. [Gustavo Dejean](https://www.linkedin.com/in/dejean2010/)
 
-Ayudante de cátedra [Lucas Carnero](lcarnero@uno.edu.ar)
+  Ayudante de cátedra [Lucas Carnero](lcarnero@uno.edu.ar)
 
+POO2
+  Lic. [Jorge Fossati](jorgefossati@yahoo.com)
+  Ing. [José Luis Cabrera](jcabrera0000@gmail.com)
+  Ing. [Leonardo Blautzik](https://github.com/leoblautzik)
 
 ## Alumnos contribuyentes al repositorio:
 [Fernando Pastorelli / Phosphorus Moscu](https://github.com/Phosphorus-M)
-
 Fabian Zacarola
+[Nicolás Failla/Krasnyco](https://github.com/krasnyco)
 
 ## [Códigos realizados](https://github.com/Phosphorus-M/Java/tree/master/src):
 - ## [Hola Mundo](src/objetos2017/SC/clases/HolaMundo.java)
@@ -145,3 +150,27 @@ Esta actividad tiene dependencia de las class, [Pelicula](src/objetos2017/SC/cla
   - Implementar un metodo estatico getNaturales que reciba como parametro el nombre de [un archivo](src/objetos2017/Final/2017%20Diciembre%20Segundo%20llamado/naturales.in) que contiene numeros naturaes de a uno por linea, y devuelva una LinkedList<[Natural](src/objetos2017/Final/2017%20Diciembre%20Segundo%20llamado/Natural.java)> conteniendo los naturales leidos del archivo.
   - Implementar un metodo estatico listaOdenadoXJuan que reciba como parametro la lista recién obtenida y el nombre del archivo de la salida donde se listaran los naturaes, ordenados según las preferencias de Juan.
   - Nota: Se espera un adecuado tratamiento de excepciones.
+
+# [Programación Orientada a Objetos 2018](src/objetos2018)
+# [Primer cuatrimestre](src/objetos2018/PC)
+# [Programación Orientada a Objetos I](src/objetos2018/PC/POO1)
+# [Clases](src/objetos2018/PC/POO1/clases)
+## [CUIL](src/objetos2018/PC/POO1/clases/CUIL.java)
+  Actividad del generador de CUILs hablada en las clases del profesor [Gustavo Dejean](https://www.linkedin.com/in/dejean2010/).
+  La clase CUIL recibe en su constructor como parametros un DNI y el genero.
+## [Camino](src/objetos2018/PC/POO1/clases/CUIL.java)
+    ### Falta hacer
+## [Parcial Nº2](src/objetos2018/PC/POO1/Parcial%20Nº2)
+  [Segunda parte del parcial](src/objetos2018/PC/POO1/Parcial%20Nº2/Segundo%20Examen%20Parcial.pdf) de POO1 Turno Tarde a cargo del ayudante de cátedra [Lucas Carnero](lcarnero@uno.edu.ar).
+  [Carpeta con las clases](src/objetos2018/PC/POO1/Parcial%20Nº2/)
+# [Programación Orientada a Objetos II](src/objetos2018/PC/POO2)
+## [Trabajo Practico Nº1](src/objetos2018/PC/POO2/TPNº1)
+  Trabajo realizado con [Nicolás Failla/Krasnyco](https://github.com/krasnyco) para los docentes de turno noche [Jorge Fossati](jorgefossati@yahoo.com) y [José Luis Cabrera](jcabrera0000@gmail.com).
+  El trabajo consiste en:
+
+  Prueba de Software:  Los alumnos recibirán el enunciado del problema "[Búsqueda Numérica](src/objetos2018/PC/POO2/TPNº1/BusquedaNumerica.pdf)"  y [distintos programas ejecutables](src/objetos2018/PC/POO2/TPNº1/Ejecutables) que, supuestamente, resuelven el problema.
+  Los grupos de trabajo deben diseñar e implementar distintos casos de prueba que permitan testear en profundidad el funcionamiento del software entregado. Estos deberán ser lo suficientemente ingeniosos y atómicos para poder decir de la manera mas certera posible, el o los errores cometidos en la implementación de cada ejecutable.
+
+  Deberán también completar y entregar un [informe detallado](src/objetos2018/PC/POO2/TPNº1/Analisis) de los resultados obtenidos, indicando los errores observados.
+
+Esta actividad tiene dependencia de las class, [Probador](src/objetos2018/PC/POO2/TPNº1/src/tp1/Probador.java) y [TP1](src/objetos2018/PC/POO2/TPNº1/src/tp1/TP1.java).
