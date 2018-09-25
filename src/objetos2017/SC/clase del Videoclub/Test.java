@@ -16,7 +16,7 @@ public class Test {
 		videojuegos[1] = Mario;
 		videojuegos[0] = Fifa;
 		videojuegos[2] = Skyrim;
-		Serie GOT = new Serie("Juego de tronos", 7, "Fantas�a medieval, drama y aventuras", "George R. R. Martin");
+		Serie GOT = new Serie("Juego de tronos", 7, "Fantasía medieval, drama y aventuras", "George R. R. Martin");
 		Serie IT = new Serie("The IT Crowd", 4, "Comedia", "Graham Linehan	");
 		Serie SV = new Serie("Silicon Valley", 4, "Comedia", "Mike Judge");
 		series[1] = GOT;
