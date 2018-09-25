@@ -17,7 +17,7 @@ Ayudante de cátedra [Lucas Carnero](lcarnero@uno.edu.ar)
 Fabian Zacarola
 
 ## [Códigos realizados](https://github.com/Phosphorus-M/Java/tree/master/src):
-- ## [Hola Mundo](scr/objetos2017/SC/clases/HolaMundo.java)
+- ## [Hola Mundo](src/objetos2017/SC/clases/HolaMundo.java)
 Clásico mensaje de "Hola Mundo"
 - ## [Numero Complejo](https://github.com/Phosphorus-M/Java/blob/master/src/Clases/Complejo.java)
 Primer vistazo al paradigma de objetos.
