@@ -138,3 +138,10 @@ Esta actividad tiene dependencia de las class, [Empresa](src/objetos2017/SC/clas
 
 
 Esta actividad tiene dependencia de las class, [Pelicula](src/objetos2017/SC/clase%20del%20Videoclub/Pelicula.java),  [Serie](src/objetos2017/SC/clase%20del%20Videoclub/Serie.java), [Videojuego](src/objetos2017/SC/clase%20del%20Videoclub/Videojuego.java), [Entregable](src/objetos2017/SC/clase%20del%20Videoclub/Entregable.java), [Test](src/objetos2017/SC/clase%20del%20Videoclub/Test.java).
+
+# Final 2017
+## [Final 2017 Segundo llamado](src/objetos2017/Final/2017%20Diciembre%20Segundo%20llamado/)
+  - Juan es un amante de las matematicas, esta enamorado de los [Naturales](src/objetos2017/Final/2017%20Diciembre%20Segundo%20llamado/Natural.java), pero no de todos por igual. Le gustan más los pares que los impares, y dentro de cada subconjunto (pares o impares), prefiere los más chicos.
+  - Implementar un metodo estatico getNaturales que reciba como parametro el nombre de [un archivo](src/objetos2017/Final/2017%20Diciembre%20Segundo%20llamado/naturales.in) que contiene numeros naturaes de a uno por linea, y devuelva una LinkedList<[Natural](src/objetos2017/Final/2017%20Diciembre%20Segundo%20llamado/Natural.java)> conteniendo los naturales leidos del archivo.
+  - Implementar un metodo estatico listaOdenadoXJuan que reciba como parametro la lista recién obtenida y el nombre del archivo de la salida donde se listaran los naturaes, ordenados según las preferencias de Juan.
+  - Nota: Se espera un adecuado tratamiento de excepciones.
