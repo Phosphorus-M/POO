@@ -82,21 +82,59 @@ Define una clase punto que tendrá dos atributos, de tipo real, x e y, que repre
 
 Esta actividad tiene dependencia de las class, [Empresa](src/objetos2017/SC/clase_6_herencias/ejercicio_2/empresa.java), [TestEmpresa](src/objetos2017/SC/clase_6_herencias/ejercicio_2/TestEmpresa.java), [empleados.java](src/objetos2017/SC/clase_6_herencias/ejercicio_2/empleados.java).
 
-- ## [VideoClub](src/objetos2017/SC/clase del Videoclub)
- Pertenecientes a la actividad 2 del material de clase [5](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx1bm9wcm9nY29ub2JqZXRvczF8Z3g6NDRiOWQ2ZjRiZTMyNGJkYg).
+- ## [VideoClub](src/objetos2017/SC/clase%20del%20Videoclub)
+ Pertenecientes a la actividad 2 del material de clase [7](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx1bm9wcm9nY29ub2JqZXRvczF8Z3g6Yjk5MzI5MDM1ZTcyZTI5).
 
- Modele una Empresa con [empleados](src/objetos2017/SC/clase_6_herencias/ejercicio_2/empleados.java). Una empresa conoce a todos sus empleados. Los [empleados](src/objetos2017/SC/clase_6_herencias/ejercicio_2/empleados.java) pueden ser de planta permanente o temporaria, además hay gerentes, que también son [empleados](src/objetos2017/SC/clase_6_herencias/ejercicio_2/empleados.java) de planta permanente, pero siguen un régimen salarial particular. Cuando un [empleado](src/objetos2017/SC/clase_6_herencias/ejercicio_2/empleados.java) es de planta permanente cobra la cantidad de horas trabajadas por $300, más antigüedad ($100 por año de antigüedad), más salario familiar.
 
- Cuando es de planta temporaria, no cobra antigüedad y cobra la cantidad de horas trabajadas por $200, más salario familiar. El salario familiar es $200 por cada hijo, los [empleados](src/objetos2017/SC/clase_6_herencias/ejercicio_2/empleados.java) casados además cobran $100 por su esposa/o. Un gerente cobra de manera similar a un [empleado](src/objetos2017/SC/clase_6_herencias/ejercicio_2/empleados.java) de planta permanente pero su hora trabajada vale $400, por antigüedad se le pagan $150 por año, mientras que el salario familiar es el mismo que el de los empleados de planta permanente y temporal.
+ Un [Video Club](src/objetos2017/SC/clase%20del%20Videoclub) pone a disposición de sus socios series, películas y videojuegos.
+   Crear una clase llamada [Pelicula](src/objetos2017/SC/clase%20del%20Videoclub/Pelicula.java) con las siguientes caracteristicas:
+  - Sus atributos son titulo, año, entregado, genero y director.
+  - Por defecto, el genero es "No definidio" y entregado false. El resto de los atributos serán valores por defecto según el tipo del atributo.
+  - Los constructores que se implementaran serán:
+      - Un constructor por defecto.
+      - Un constructor con el titulo y director. El resto por defecto.
+      - Un constructor con todos los atributos, excepto de entregado.
+  - Los metodos que se implementara serán:
+      - Metodos get de todos los atributos, excepto de entregado.
+      - Métodos set de todos los atributos, excepto de entregado.
+      - Sobrescribe los metodos toString.
 
- Defina e implemente el mensaje montoTotal() en la clase Empresa, que retorna el monto total que la empresa debe pagar en concepto de sueldos a sus empleados. Provea una clase [TestEmpresa](src/objetos2017/SC/clase_6_herencias/ejercicio_2/TestEmpresa.java) para instanciar y testear su sistema. En el método main de esa clase cree el siguiente escenario y envíe a la empresa el mensaje montoTotal() para obtener la liquidación total.
+  Crear una clase llamada [Serie](src/objetos2017/SC/clase%20del%20Videoclub/Serie.java) con  las siguientes caracteristicas:
+    - Sus atributos son titulo, numero de temporadas, entregado, genero y creador.
+    - Por defecto, el numero de temporadas es de 3 temporadas y entregado false. El resto de atributos serán valores por defecto según el tipo del atributo.
+    - Los constructores que se implementaran seran:
+      - Un constructor por defecto.
+      - Un constructor con el titulo y creador. El resto por defecto.
+      - Un constructor con todos los atributos, excepto de entregado.
+    - Los metodos que se implementaran serán:
+      - Metodos get de todos los atributos, excepto de entregado.
+      - Metodos set de todos los atributos, excepto entregado.
+      - Sobrescribe los metodos toString.
 
- El contenido de la clase TestEmpresa:
+    Crear una clase [Videojuego](src/objetos2017/SC/clase%20del%20Videoclub/Videojuego.java) con las siguientes caracteristicas:
+      - Sus atributos son titulo, horas estimadas, entregado, genero y compañia.
+      - Por defecto, las horas estimadas serán de 10 horas y entregado false. El resto de atributos serán valores por defecto según el tipo del atributo.
+      - Los constructores que se implementaran serán:
+        - Un constructor por defecto.
+        - Un constructor con el titulo y horas estimadas. El resto por defecto.
+        - Un constructor con todos los atributos, excepto de entregado.
+      - Los metodos que se implementaran serán:
+        - Metodos get de todos los atributos, excepto de entregado.
+        - Metodos set de todos los atributos, excepto de entregado.
+        - Sobrescribe los metodos toString.
 
-    Una empresa, con el CUIT y Razón Social que desee, y con los cuatro empleados que se describen a continuación.
-        Un empleado de Planta Temporaria con 80 horas trabajadas, con esposa y sin hijos.
-        Un empleado de Planta Permanente (que no sea gerente) con 80 horas trabajadas, con esposa, 2 hijos y 6 años de antigüedad.
-        Un empleado de Planta Permanente (que no sea gerente) con 160 horas trabajadas, sin esposa, sin hijos y con 4 años de antigüedad.
-        Un Gerente con 160 horas trabajadas, con esposa, un hijo y 10 años de antigüedad.
+    Crear una interface llamada [Entregable](src/objetos2017/SC/clase%20del%20Videoclub/Entregable.java) con los siguientes metodos:
+      - entregar(): cambia el atributo prestado a true.
+      - devolver(): cambia el atributo prestado a false.
+      - isEntregado(): devuelve el estado del atributo prestado.
+      - Metodo compareTo(Object a), commpara las horas estunadas eb kis vudeihyegis y en las series el numero  de temporadas. Y en las Peliculas el año.
 
-Esta actividad tiene dependencia de las class, [Empresa](src/objetos2017/SC/clase_6_herencias/ejercicio_2/empresa.java), [TestEmpresa](src/objetos2017/SC/clase_6_herencias/ejercicio_2/TestEmpresa.java), [empleados.java](src/objetos2017/SC/clase_6_herencias/ejercicio_2/empleados.java).
+    Crear una [aplicación ejecutable](src/objetos2017/SC/clase%20del%20Videoclub/Test.java) que haga lo siguiente:
+      - Crea tres arrays, uno de Peliculas, otro de Series y otro de Videojuego.
+      - Crea un objeto en cada posición del array, con los valores que desees, puede usar distintos constructores.
+      - Entrega algunos Videojuegos y Peliculas y Series con el metodo entregar().
+      - Cuenta cuantas Peliculas, Series y Videojuegos hay entregados. Al contarlos, devuelvelos.
+      - Por ultimo, indica que Videojuego tiene más horas estimadas, la serie con más temporadas y la Pelicula más antigua. Muestralos en pantalla con toda su información (usa el metodo toString()).
+
+
+Esta actividad tiene dependencia de las class, [Pelicula](src/objetos2017/SC/clase%20del%20Videoclub/Pelicula.java),  [Serie](src/objetos2017/SC/clase%20del%20Videoclub/Serie.java), [Videojuego](src/objetos2017/SC/clase%20del%20Videoclub/Videojuego.java), [Entregable](src/objetos2017/SC/clase%20del%20Videoclub/Entregable.java), [Test](src/objetos2017/SC/clase%20del%20Videoclub/Test.java).
