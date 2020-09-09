@@ -1,4 +1,4 @@
-# Java
+# Programación Orientada a Objetos
 Material de realizado durante las clases de Programación Orientada a Objetos I de la [Universidad Nacional del Oeste](http://uno.edu.ar/), Buenos Aires, Argentina
 
 ## Docentes:
