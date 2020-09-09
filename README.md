@@ -3,18 +3,20 @@ Material de realizado durante las clases de Programación Orientada a Objetos I 
 
 ## Docentes:
 POO1:
-  Ing. [Leonardo Blautzik](https://github.com/leoblautzik)
+ - Ing. [Leonardo Blautzik](https://github.com/leoblautzik)
 
-  Prof. Mag. Ing. [Pablo Pandolfo](https://github.com/ppandomail)
+ - Prof. Mag. Ing. [Pablo Pandolfo](https://github.com/ppandomail)
 
-  Esp. [Gustavo Dejean](https://www.linkedin.com/in/dejean2010/)
+ - Esp. [Gustavo Dejean](https://www.linkedin.com/in/dejean2010/)
 
-  Ayudante de cátedra [Lucas Carnero](https://github.com/lcarnero)
+ - Ayudante de cátedra [Lucas Carnero](https://github.com/lcarnero)
+ 
+ - Ayudante de cátedra Pablo Rechimon
 
-POO2
-  Lic. [Jorge Fossati](jorgefossati@yahoo.com) / Cursada POO 2 2018  
-  Ing. [José Luis Cabrera](jcabrera0000@gmail.com)  
-  Ing. [Leonardo Blautzik](https://github.com/leoblautzik)
+POO2:  
+ - Lic. [Jorge Fossati](jorgefossati@yahoo.com) / Cursada POO 2 2018  
+ - Ing. [José Luis Cabrera](jcabrera0000@gmail.com)  
+ - Ing. [Leonardo Blautzik](https://github.com/leoblautzik)
 
 ## Alumnos contribuyentes al repositorio:
 [Fernando Pastorelli / Phosphorus Moscu](https://github.com/Phosphorus-M)
