@@ -12,8 +12,8 @@ POO1:
   Ayudante de cátedra [Lucas Carnero](https://github.com/lcarnero)
 
 POO2
-  Lic. [Jorge Fossati](jorgefossati@yahoo.com) // Cursada POO 2 2018
-  Ing. [José Luis Cabrera](jcabrera0000@gmail.com)
+  Lic. [Jorge Fossati](jorgefossati@yahoo.com) / Cursada POO 2 2018  
+  Ing. [José Luis Cabrera](jcabrera0000@gmail.com)  
   Ing. [Leonardo Blautzik](https://github.com/leoblautzik)
 
 ## Alumnos contribuyentes al repositorio:
